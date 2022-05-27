@@ -4,11 +4,15 @@
   "description": "Express JS - Simple CRUD Customer Service",
   "main": "src/server.ts",
   "scripts": {
-    "start": "node build/src/server.js",
+    "start": "node src/server.js",
     "dev": "nodemon src/server.js",
     "lint": "eslint --ext .js ./src",
     "lint:fix": "eslint --fix --ext .js ./src",
-    "test": "jest"
+    "test": "jest",
+    "db:migrate": "npx sequelize-cli db:migrate",
+    "db:migrate:undo": "npx sequelize-cli db:migrate:undo",
+    "db:migrate:undo:all": "npx sequelize-cli db:migrate:undo:all",
+    "db:seed": "npx sequelize-cli db:seed:all"
   },
   "repository": {
     "type": "git",
