@@ -44,5 +44,8 @@
     "jest": "^28.1.0",
     "nodemon": "^2.0.16",
     "sequelize-cli": "^6.4.1"
+  },
+  "engines": {
+    "node": "16.13.1"
   }
 }
